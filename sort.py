@@ -1,6 +1,6 @@
 
 #sort_list will take a list input and return it sorted
-def sort_List(myList):
+def sort_list(myList):
  if isinstance(myList, list) == False: #parameter is not a list
   return None
 
@@ -20,4 +20,5 @@ def sort_List(myList):
    i2+=1
   i+=1
  return myList
+
 
