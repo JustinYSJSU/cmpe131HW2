@@ -2,16 +2,16 @@
 
 def doubler(func):
  def wrapper():
-  print("Before")
   func()
-  def wrapper2():
-   print("Before 2")
-   func()
-   print("After 2")
-  return wrapper2
-  print("After")
  return wrapper
 
+def doubler2(func):
+ def wrapper():
+  func()
+ return wrapper
+
+
+@doubler2
 @doubler
 def twoTime():
  print("This is part of a double call")
