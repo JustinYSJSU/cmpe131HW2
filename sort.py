@@ -7,7 +7,7 @@ def sort_list(myList):
  n = len(myList) #n is the length of the list
 
  if(n == 0): #list is empty  return None
-  return None
+  return myList
 
  i = 0
  while i < n:

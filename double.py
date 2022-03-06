@@ -4,12 +4,8 @@ def doubler(func):
  def wrapper():
   print("Before")
   func()
+  func()
   print("After")
-  def wrapper2():
-   print("Before2")
-   func() 
-   print("After2")
-  return wrapper2
  return wrapper
 
 @doubler
