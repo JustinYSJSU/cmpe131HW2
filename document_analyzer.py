@@ -11,6 +11,7 @@ def analyze(fileName):
  #if it is, addd to it's current count
  #if it's not, then add it to dictionary w/ a count of 1 
  for word in words:
+  word = word.lower()
   if word in wordCounter:
    wordCounter[word]+=1
   else:
@@ -26,9 +27,9 @@ def analyze(fileName):
  i = 0
  for word, count in sortedCounter.items():
   print(f"{word}: {count}", end = "\n")
-  i+=1
-  if(i == 5):
-   break
+ # i+=1
+ # if(i == 5):
+  # break
   
 
 def main():
