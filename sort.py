@@ -1,7 +1,3 @@
-def main():
-  myList = [1,2,3,7]
-  sort_List(myList)
-  print(myList)
 
 #sort_list will take a list input and return it sorted
 def sort_List(myList):
@@ -24,5 +20,10 @@ def sort_List(myList):
    i2+=1
   i+=1
  return myList
+
+def main():
+  myList = [3,5,1,2]
+  sort_List(myList)
+  print(myList)
 
 main()
