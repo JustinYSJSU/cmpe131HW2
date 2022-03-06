@@ -21,9 +21,3 @@ def sort_List(myList):
   i+=1
  return myList
 
-def main():
-  myList = [3,5,1,2]
-  sort_List(myList)
-  print(myList)
-
-main()
