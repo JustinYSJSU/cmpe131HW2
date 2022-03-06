@@ -27,9 +27,9 @@ def analyze(fileName):
  i = 0
  for word, count in sortedCounter.items():
   print(f"{word}: {count}", end = "\n")
- # i+=1
- # if(i == 5):
-  # break
+  i+=1
+  if(i == 5):
+   break
   
 
 def main():
