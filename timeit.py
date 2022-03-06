@@ -5,10 +5,8 @@ import time
 def calculate_time(function):
  def wrapper():
   currentTime = time.time()
-  print(f"The current time is {currentTime}")
   function()
   afterTime = time.time()
-  print(f"The time after running function is {afterTime}")
   totalTime = afterTime - currentTime  
   print(f"Total time {totalTime}")
  return wrapper
