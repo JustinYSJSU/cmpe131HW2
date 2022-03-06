@@ -33,5 +33,4 @@ def analyze(fileName):
 
 def main():
  analyze("document.txt")
- analyze("freedom.txt")
 main()

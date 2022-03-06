@@ -2,7 +2,7 @@
 import time
 
 #example of a decorator in python
-def timeit(function):
+def calculate_time(function):
  def wrapper():
   currentTime = time.time()
   print(f"The current time is {currentTime}")
