@@ -19,7 +19,7 @@ def analyze(fileName):
   else:
    wordCounter[word] = 1
 
- sortedCounter = sorted(wordCounter.items(), key = lambda x:x[1], reverse = True)
+ sortedCounter = sorted(wordCounter.items(), key = lambda x:(-x[1], x[0]))
  sortedCounter = dict(sortedCounter)
 
  print()
